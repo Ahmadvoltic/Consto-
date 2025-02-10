@@ -12,12 +12,12 @@ const slides = [
     description: "Smart homes that provide the ultimate comfort.",
   },
   {
-    image: "/images/slide2.jpg",
+    image: "http://consto.themezinho.net/wp-content/uploads/2020/06/slide02.jpg",
     title: "Modern Apartments",
     description: "Modern designs for modern families.",
   },
   {
-    image: "/images/slide3.jpg",
+    image: "http://consto.themezinho.net/wp-content/uploads/2020/06/slide03.jpg",
     title: "Luxury Living",
     description: "Luxury apartments at affordable prices.",
   },
@@ -40,8 +40,30 @@ const SlidingComponent = () => {
     <div className="relative flex justify-center items-center py-20 h-[700px] bg-gray-800 text-white">
       {/* Left Section (Text) */}
       <div className="absolute left-10 w-1/2 text-center md:text-left">
-        <h1 className="text-4xl font-bold mb-4">{slides[currentSlide].title}</h1>
-        <p className="text-xl mb-6">{slides[currentSlide].description}</p>
+
+
+
+
+        <h1 className='text-6xl font-bold text-white '>{slides[currentSlide].title}</h1>
+        <p className=' mb-[50px] text-xl text-white'>{slides[currentSlide].description}</p>
+        <div className=' mt-7' >
+
+          <button className='bg-[#FEED01] text-black px-7 py-4 flex items-center'>See All Categories
+            <FaArrowRight className='ml-4  text-black' size={20} />
+          </button>
+
+        </div>
+
+         <div className="mt-3">
+              {/* Slide number */}
+              <span className="text-6xl font-semibold">
+                {currentSlide + 1} / <span className="text-2xl">3</span>
+              </span>
+        
+              {/* Navigation Arrows */}
+              
+            </div>
+
       </div>
 
       {/* Right Section (Image) */}

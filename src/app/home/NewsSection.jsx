@@ -1,3 +1,4 @@
+import Container from "@/components/Container";
 import React from "react";
 import { FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa"; // Social media icons
 
@@ -27,6 +28,9 @@ const newsArticles = [
 
 const NewsSection = () => {
   return (
+    <Container>
+
+    
     <div className=" py-20 px-10">
       <h2 className="text-4xl font-bold text-center mb-10">
         Reach Updates
@@ -84,6 +88,7 @@ const NewsSection = () => {
         ))}
       </div>
     </div>
+    </Container>
   );
 };
 

@@ -73,12 +73,16 @@ import React from 'react'
 import { FaArrowRight, FaArrowUp } from 'react-icons/fa'
 import styles from '@/components/styles/header.module.css'
 import Container from '@/components/Container'
+import {  animateScroll as scroll } from "react-scroll";
 const FooterSection = () => {
-    //dunction of Scrolling
-    const scrollToTop = () => {
-       
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          };
+ 
+          // Scroll to top with smooth effect
+const scrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 2000, // Duration in ms
+      smooth: "easeInOutQuart", // Smooth scrolling easing
+    });
+  };
     return (
         <div>
             {/* top footer */}

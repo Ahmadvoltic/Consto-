@@ -14,6 +14,7 @@ import CalculationSection from './CalculationSection'
 import TeamSection from './TeamSection'
 import NewsSection from './NewsSection'
 import FooterSection from './FooterSection'
+import VideoSection from './VideoSection'
 
 const HeroSection = () => {
     return (
@@ -54,6 +55,8 @@ const HeroSection = () => {
                 <p>Lorem ipsum dolor, sit incidunt. Rem non sunt labore veniam esse praesentium reiciendis eaque dolore! Quam esse delectus quisquam quasi dolore, pariatur eum?
 
                 </p>
+                {/* ------------------------------------------- */}
+            {/* <SlidingComponent/> */}
 
                 <FeaturedSection />
                 {/* Our History Section */}
@@ -78,10 +81,12 @@ const HeroSection = () => {
             <CalculationSection />
             <Container>
                 <TeamSection />
-                <NewsSection/>
             </Container>
-                <FooterSection/>
-            {/* <SlidingComponent/> */}
+
+            {/* Video Section */}
+            <VideoSection/>
+                <NewsSection />
+            <FooterSection />
             {/* <ProjectSection/>  */}
         </>
     )

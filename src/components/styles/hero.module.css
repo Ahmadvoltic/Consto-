@@ -1,19 +1,10 @@
 .hero {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+  
     padding: 120px 0px 0px 15px;
     border-radius: 12px;
 }
-/* 
-.textSection {
-    flex: 1;
 
-    width: 50%;
-    min-height: 500px;
-    border: 1px solid black;
-    
-} */
  .image{
     width: 100%;
     height: 800px;
@@ -24,10 +15,8 @@
  }
  .card {
     position: relative;
-    /* width: 250px;
-    height: 350px; */
+  
     background-color: #fff; /* Background color for the card */
-    /* border-radius: 12px; */
     overflow: hidden; /* Hide the background on the edges */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -37,7 +26,6 @@
     content: "";
     width: 100%;
     height: 100%;
-    /* background: var(--color-main, #f39c12); Customizable main color */
     position: absolute;
     left: 0;
     top: 0;
@@ -57,4 +45,10 @@
     transform: translateY(-5px); /* Slight lift effect */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow when hovered */
   }
-  
+  .video{
+    width: 100%;
+    display: block;
+    margin: 0;
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
