@@ -68,11 +68,17 @@
 // };
 
 // export default FooterSection;
+"use client"
 import React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
+import { FaArrowRight, FaArrowUp } from 'react-icons/fa'
 import styles from '@/components/styles/header.module.css'
 import Container from '@/components/Container'
 const FooterSection = () => {
+    //dunction of Scrolling
+    const scrollToTop = () => {
+       
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          };
     return (
         <div>
             {/* top footer */}
@@ -93,17 +99,25 @@ const FooterSection = () => {
                         </div>
                     </div>
                 </Container>
+
             </div>
+
             {/* bottom footer */}
-            <div className='h-[470.39px] bg-[#0b0b0b] text-white'>
-                <Container className='flex flex-col justify-between'>
+            <div className='h-[470.39px] bg-[#0b0b0b] text-white relative'>
+                <div className='absolute right-[20px] top-[-35px]'>
+                    <button className='text-black bg-[#feed01] w-[100px] h-[75px] py-[15px] text-lg   flex flex-col items-center  ' onClick={scrollToTop}>
+                        <FaArrowUp className='w-[17px] h-[17px] ' />
+                        Scroll
+                    </button>
+                </div>
+                <Container className=''>
                     <div className='flex'>
 
                         <div className='w-[400px] h-[283.65px] pt-[80px] px-[15px]'>
-                            <h6 className='mb-[20px]'>HEADQUARTER</h6>
+                            <h6 className='mb-[20px] text-lg font-semibold'>HEADQUARTER</h6>
                             <div className=''>
                                 <address className='mb-[16px]'>
-                                    <p className='mb-[16px]'>228 Cardigan Road, Leeds<br />
+                                    <p className='mb-[16px] text-lg'>228 Cardigan Road, Leeds<br />
                                         Geneva Switzerland</p>
                                     <p className='mb-[16px]'>+1 (850) 344 0 66 #20</p>
                                     <a href="#" className='underline decoration-[#feed01] decoration-2'>FIND US ON MAP</a>
@@ -111,10 +125,10 @@ const FooterSection = () => {
                             </div>
                         </div>
                         <div className='w-[400px] h-[283.65px] pt-[80px] px-[15px]'>
-                            <h6 className='mb-[20px]'>HEADQUARTER</h6>
+                            <h6 className='mb-[20px] text-lg font-semibold'>SALES OFFICES</h6>
                             <div className=''>
                                 <address className='mb-[16px]'>
-                                    <p className='mb-[16px]'>228 Cardigan Road, Leeds<br />
+                                    <p className='mb-[16px] text-lg'>228 Cardigan Road, Leeds<br />
                                         Geneva Switzerland</p>
                                     <p className='mb-[16px]'>+1 (850) 344 0 66 #20</p>
                                     <a href="#" className='underline decoration-[#feed01] decoration-2'>FIND US ON MAP</a>
@@ -122,20 +136,19 @@ const FooterSection = () => {
                             </div>
                         </div>
                         <div className='w-[400px] h-[283.65x] pt-[80px] px-[15px]'>
-                            <h6 className='mb-[20px]'>HEADQUARTER</h6>
+                            <h6 className='mb-[20px] text-lg font-semibold'>SUBSCRIPTION</h6>
                             <div className=''>
                                 <address className='mb-[16px]'>
-                                    <p className='mb-[16px]'>228 Cardigan Road, Leeds<br />
-                                        Geneva Switzerland</p>
-                                    <p className='mb-[16px]'>+1 (850) 344 0 66 #20</p>
-                                    <a href="#" className='underline decoration-[#feed01] decoration-2'>FIND US ON MAP</a>
+                                    <p className='mb-[16px]'>228 Cardigan Road, Leeds</p>
                                 </address>
+                                <input type="text" placeholder='Enter Your Email'  className='p-[30px] mb-[20px]  w-[370px] bg-[#232222]'/>
+                                <button className='p-[20px]   w-[160px] h-[60px]  bg-[#feed01] text-black'>Sign up</button>
                             </div>
                         </div>
 
 
                     </div>
-                    <div className='flex justify-between  border-t dotted py-[40px] h-[106.6px] mt-12' >
+                    <div className='flex justify-between  border-t dotted py-[40px] h-[106.6px] mt-[15px]' >
                         <span>© 2025 Consto | Industrial Construction Company</span>
                         <span>Site created by <a href="#">Themezinho</a></span>
                     </div>
