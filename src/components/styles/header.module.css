@@ -1,0 +1,35 @@
+.navbar{
+    background-image: url('http://consto.themezinho.net/wp-content/themes/consto/images/header-pattern.png');
+    background-color: #0b0b0b;
+    max-height: 850px;
+}
+.footer{
+  background-image: url('http://consto.themezinho.net/wp-content/themes/consto/images/header-pattern.png');
+  background-color: #232222;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar ul li a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    position: relative; /* For positioning the pseudo-element */
+    padding-bottom: 5px; /* Space between text and line */
+  }
+  
+  /* Create the underline effect */
+  .navbar ul li a::after {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Start with 0 width */
+    height: 2px; /* Line height */
+    background-color: yellow; /* Color of the line */
+    transition: width 0.25s ease; /* Smooth transition effect */
+  }
+  
+  /* On hover, expand the underline */
+  .navbar ul li a:hover::after {
+    width: 100%; /* Expand to full width of the link */
+  }
