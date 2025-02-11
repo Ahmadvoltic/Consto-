@@ -42,7 +42,7 @@ const HeroSection = () => {
 
                     {/* Image-section */}
                     {/* <ImagesSection /> */}
-                    <div className={`${styles.image} relative left-[225px] `}>
+                    <div className={`${styles.image} relative left-[200px] `}>
                         <div className='bg-[#FEED01] text-black w-[130px] h-[130px] absolute bottom-[20px] left-[20px] flex flex-col justify-center items-center'>
                             <h1 className='text-6xl my-3 '>27</h1>
                             <p className='text-sm ms-7 mb-3'>YEARS OF EXPERIENCE</p>

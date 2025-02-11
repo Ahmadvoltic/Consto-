@@ -46,9 +46,8 @@
 
 
 
-
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import CountUp from "react-countup"; // Using react-countup for the counting animation
 
 const CountingCard = ({ value, label, suffix, color, className, isVisible }) => {
@@ -79,31 +78,46 @@ const CountingCard = ({ value, label, suffix, color, className, isVisible }) => 
 };
 
 const CountingSection = () => {
-  const [isCounted, setIsCounted] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const countingRef = useRef(null); // Ref to attach to the section
 
   useEffect(() => {
-    // Check if the counter has already been shown by checking localStorage
-    const hasCounted = localStorage.getItem("hasCounted");
+    // Create an intersection observer to detect when the section is in the viewport
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true); // Trigger the animation when the section is in view
+          observer.disconnect(); // Disconnect observer after the animation starts
+        }
+      },
+      { threshold: 0.5 } // Trigger when 50% of the element is in the viewport
+    );
 
-    if (!hasCounted) {
-      // Set the flag to indicate the counter should run
-      setIsCounted(true);
-      localStorage.setItem("hasCounted", "true");
-    } else {
-      // If the counter has already been counted, don't run the counting animation again
-      setIsCounted(false);
+    // Start observing the element
+    if (countingRef.current) {
+      observer.observe(countingRef.current);
     }
+
+    return () => {
+      // Cleanup observer when component is unmounted
+      if (countingRef.current) {
+        observer.unobserve(countingRef.current);
+      }
+    };
   }, []);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 p-10">
+    <div
+      ref={countingRef}
+      className="grid grid-cols-1 md:grid-cols-4 gap-6 p-10"
+    >
       {/* First Card */}
       <CountingCard
         value={33}
         label="Mortgage Credit"
         suffix="%"
         color="yellow-500"
-        isVisible={isCounted}
+        isVisible={isVisible}
       />
 
       {/* Second Card */}
@@ -113,7 +127,7 @@ const CountingSection = () => {
         suffix="#"
         color="yellow-500"
         className="mt-[143px]"
-        isVisible={isCounted}
+        isVisible={isVisible}
       />
 
       {/* Third Card */}
@@ -122,7 +136,7 @@ const CountingSection = () => {
         label="XXL Size of Flats"
         suffix="m²"
         color="yellow-500"
-        isVisible={isCounted}
+        isVisible={isVisible}
       />
 
       {/* Fourth Card */}
@@ -132,10 +146,11 @@ const CountingSection = () => {
         suffix="+"
         color="yellow-500"
         className="mt-[143px]"
-        isVisible={isCounted}
+        isVisible={isVisible}
       />
     </div>
   );
 };
 
 export default CountingSection;
+
