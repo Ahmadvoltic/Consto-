@@ -88,17 +88,17 @@ const scrollToTop = () => {
             {/* top footer */}
             <div className={`${styles.footer}  py-[80px] h-[450px]`}>
                 <Container className="px-[15px]">
-                    <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/logo.png" className='w-[219px] h-[50px] mb-[30px]' alt="" />
+                    <img src="/logo.png" className='w-[219px] h-[50px] mb-[30px]' alt="" />
                     <h2 className='text-6xl font-bold text-white mb-[50px]'> Live Better and Beautiful</h2>
                     <div className='flex items-center '>
 
 
-                        <button className="bg-[#feed01] text-black px-6 py-4  flex items-center justify-center ">
+                        <button className="bg-[#feed01] text-black px-6 py-4  flex items-center justify-center translate-x-2 transition-all ease-in-out duration-300 hover:px-8">
                             Get Consultation
                             <FaArrowRight className="ml-2" />
                         </button>
                         <div className=' ml-[120px] flex items-center'>
-                            <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/author01.jpg" className='w-[60px] h-[60px] rounded-full' alt="" />
+                            <img src="/author01.jpg" className='w-[60px] h-[60px] rounded-full cursor-pointer' alt="" />
                             <p className='text-white ml-2'>Sales representatibe <b className='underline decoration-[#feed01] decoration-2'>+194535345340583049</b> free call!</p>
                         </div>
                     </div>
@@ -145,8 +145,8 @@ const scrollToTop = () => {
                                 <address className='mb-[16px]'>
                                     <p className='mb-[16px]'>228 Cardigan Road, Leeds</p>
                                 </address>
-                                <input type="text" placeholder='Enter Your Email'  className='p-[30px] mb-[20px]  w-[370px] bg-[#232222]'/>
-                                <button className='p-[20px]   w-[160px] h-[60px]  bg-[#feed01] text-black'>Sign up</button>
+                                <input type="text" placeholder='Enter Your Email'  className='p-[30px] mb-[20px]  w-[370px] bg-[#232222] outline-none '/>
+                                <button className='p-[20px]   w-[160px] h-[60px]  bg-[#feed01]  text-black '>Sign up</button>
                             </div>
                         </div>
 

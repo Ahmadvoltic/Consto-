@@ -1,5 +1,6 @@
 import React from "react";
 // import Image from "next/image"; // For image optimization (use Next.js Image component)
+// import family from '../../../public/family.png'
 
 const ProfileSection = () => {
     return (
@@ -9,7 +10,7 @@ const ProfileSection = () => {
                 <div className=" ">
               
                     <img
-                        src="http://consto.themezinho.net/wp-content/uploads/2020/06/side-image01.png"
+                        src='/family.png'
                         alt="Kitten"
                         className="w-full h-full object-cover "
                     />

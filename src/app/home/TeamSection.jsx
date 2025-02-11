@@ -6,31 +6,31 @@ const teamMembers = [
         name: "Jane O'neil",
         position: "Chief Financial Officer",
         phone: "+850 955 26 84",
-        image: "http://consto.themezinho.net/wp-content/uploads/2020/06/team01.jpg",
+        image: "/team01.jpg",
     },
     {
         name: "Bob Voss",
         position: "Chief Financial Officer",
         phone: "+850 955 26 84",
-        image: "http://consto.themezinho.net/wp-content/uploads/2020/06/team02.jpg",
+        image: "/team02.jpg",
     },
     {
         name: "Christina Eden",
         position: "Chief Financial Officer",
         phone: "+850 955 26 84",
-        image: "http://consto.themezinho.net/wp-content/uploads/2020/06/team03.jpg",
+        image: "/team03.jpg",
     },
     {
         name: "Eric Mendes",
         position: "Chief Financial Officer",
         phone: "+850 955 26 84",
-        image: "http://consto.themezinho.net/wp-content/uploads/2020/06/team04.jpg",
+        image: "/team04.jpg",
     },
     {
         name: "Marie Sheldon",
         position: "Chief Financial Officer",
         phone: "+850 955 26 84",
-        image: "http://consto.themezinho.net/wp-content/uploads/2020/06/team05.jpg",
+        image: "/team05.jpg",
     },
 ];
 

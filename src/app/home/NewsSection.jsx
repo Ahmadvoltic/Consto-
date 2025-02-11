@@ -4,25 +4,25 @@ import { FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa"; // Social 
 
 const newsArticles = [
   {
-    image: "http://consto.themezinho.net/wp-content/uploads/2020/06/slide01-500x323.jpg", // External image URL
+    image: "/slide01-500x323.jpg", // External image URL
     title: "Result of a challenge I participated in as a guest on The Futuristic",
     date: "24th June, 2020",
     author: "Jennifer O'neil",
-    profileImage: "http://consto.themezinho.net/wp-content/uploads/2020/07/author03.jpg",
+    profileImage: "/author03.jpg",
   },
   {
-    image: "http://consto.themezinho.net/wp-content/uploads/2020/06/slide02-500x323.jpg", // External image URL
+    image: "/slide02-500x323.jpg", // External image URL
     title: "Challenge I participated in as a guest on all font",
     date: "24th June, 2020",
     author: "Christina Eden",
-    profileImage: "http://consto.themezinho.net/wp-content/uploads/2020/07/author02.jpg",
+    profileImage: "/author02.jpg",
   },
   {
-    image: "http://consto.themezinho.net/wp-content/uploads/2020/06/slide03-500x323.jpg", // External image URL
+    image: "/slide03-500x323.jpg", // External image URL
     title: "Participated challenge in as a guest on The Future",
     date: "24th June, 2020",
     author: "Eric Clark",
-    profileImage: "http://consto.themezinho.net/wp-content/uploads/2020/06/author01.jpg",
+    profileImage: "/author01.jpg",
   },
 ];
 

@@ -1,7 +1,8 @@
-import React from 'react'
-import Container from './Container'
-import styles from '@/components/styles/header.module.css'
-import { FiMenu, FiSearch } from 'react-icons/fi'
+import React from 'react';
+import Container from './Container';
+import styles from '@/components/styles/header.module.css';
+// import logo from '/logo.png';
+import { FiMenu, FiSearch } from 'react-icons/fi';
 
 const Navbar = () => {
     return (
@@ -9,18 +10,18 @@ const Navbar = () => {
 
             <Container className={`flex justify-between items-center ${styles.navbar} text-white `}>
                 {/* logo */}
-                <img src="http://consto.themezinho.net/wp-content/themes/consto/images/logo@2x.png" className='h-[40px] mt-2' alt="" />
+                <img src='/logo.png' className='h-[40px] mt-2' alt="logo" />
                 {/* language icon */}
-                <div className='language'>
+                {/* <div className='language'>
                     <ul className='flex size-[17px]   gap-5'>
                         <li><a href="#">en</a></li>
                         <li><a href="#">ru</a></li>
                     </ul>
-                </div>
+                </div> */}
                 {/* main nav */}
                 <div className='main-nav'>
                     <nav>
-                        <ul className='flex  gap-7'>
+                        <ul className='flex  gap-7 '>
                             <li><a href="">Consto</a></li>
                             <li><a href="">Services</a></li>
                             <li><a href="">Projects</a></li>

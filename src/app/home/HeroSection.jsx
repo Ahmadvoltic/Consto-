@@ -29,10 +29,12 @@ const HeroSection = () => {
                         <h1 className='text-6xl font-bold text-white '>All <span>Smart</span></h1>
                         <h1 className='text-6xl font-bold mb-4 text-white'>Apartments</h1>
                         <p className=' mb-[70px] text-white'>We built ambient living spaces for families</p>
-                        <div className='flex relative mt-7' >
+                        <div className=' mt-7' >
 
-                            <button className='bg-[#FEED01] px-7 py-4'>See All Categories</button>
-                            <FiArrowRight className='mt-4 absolute left-[160px]' size={20} />
+                            <button className='bg-[#FEED01] px-7 py-4 flex items-center  duration-300 ease-in-out hover:px-9'>
+                                 See All Categories
+                                 <FiArrowRight className='ml-4' size={20} />
+                            </button>
                         </div>
 
 
@@ -60,12 +62,12 @@ const HeroSection = () => {
 
                 <FeaturedSection />
                 {/* Our History Section */}
-                <div class="text-center mb-10">
-                    <h2 class="text-2xl font-semibold text-black mb-2">
-                        <span class="underline  decoration-[#FEED01] decoration-4">OUR HISTORY</span>
+                <div className="text-center mb-10">
+                    <h2 className="text-2xl font-semibold text-black mb-2">
+                        <span className="underline  decoration-[#FEED01] decoration-4">OUR HISTORY</span>
                     </h2>
 
-                    <h3 class="text-4xl  text-black">
+                    <h3 className="text-4xl  text-black">
                         Quality & Passion With <br /> Our Services
                     </h3>
                 </div>
@@ -78,13 +80,13 @@ const HeroSection = () => {
 
                 <PricingSection />
             </Container>
-            <CalculationSection />
+            {/* <CalculationSection /> */}
             <Container>
                 <TeamSection />
             </Container>
 
             {/* Video Section */}
-            <VideoSection/>
+            {/* <VideoSection/> */}
                 <NewsSection />
             <FooterSection />
             {/* <ProjectSection/>  */}

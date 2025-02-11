@@ -9,7 +9,7 @@ const FeaturedSection = () => {
         {/* First Card */}
         <div className={`w-[390px] h-[453px] px-[30px] py-[45px] bg-white   hover:bg-[#FEED01] transition-all duration-300  ${styles.card} `}>
           <div className="flex justify-start mb-[50px] text-5xl text-gray-300">
-            <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/icon01.png" className="w-[50px] h-[70px] " alt="" />
+            <img src="/icon01.png" className="w-[50px] h-[70px] " alt="" />
           </div>
           <h3 className="text-2xl font-semibold mb-[40px]">We plan with sensetive</h3>
           <p className="text-gray-400 mb-[70px]">
@@ -21,7 +21,7 @@ const FeaturedSection = () => {
         {/* Second Card */}
         <div className={`w-[390px] h-[453px] px-[30px] py-[45px] bg-white   hover:bg-[#FEED01] transition-all duration-300  ${styles.card} `}>
           <div className="flex justify-start mb-[50px]  text-5xl text-gray-300">
-            <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/icon02.png" className="w-[70px] h-[70px] " alt="" />
+            <img src="/icon02.png" className="w-[70px] h-[70px] " alt="" />
 
           </div>
           <h3 className="text-2xl font-semibold  mb-[40px]">For futuristic buildings</h3>
@@ -34,7 +34,7 @@ const FeaturedSection = () => {
         {/* Third Card */}
         <div className={`w-[390px] h-[453px] px-[30px] py-[45px] bg-white   hover:bg-[#FEED01] transition-all duration-300  ${styles.card} `}>
           <div className="flex justify-start mb-[50px] text-5xl text-gray-300">
-            <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/icon03.png" className="w-[70px] h-[70px] " alt="" />
+            <img src="/icon03.png" className="w-[70px] h-[70px] " alt="" />
 
           </div>
           <h3 className="text-2xl font-semibold mb-[40px]">Make living beautiful</h3>
