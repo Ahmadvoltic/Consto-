@@ -11,6 +11,11 @@ body {
   font-family: 'Museo Sans', sans-serif;
 }
 
+/* html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden; 
+} */
+
 
 
 
