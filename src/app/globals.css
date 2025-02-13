@@ -1,11 +1,16 @@
-/* In your global.css or the component where you use the slider */
+
+@import url('https://fonts.cdnfonts.com/css/museo-sans');
+
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
-
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  font-family: 'Museo Sans', sans-serif;
+}
+
 
 
 

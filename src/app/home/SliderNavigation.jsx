@@ -1,9 +1,10 @@
 "use client"
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing React icons for arrows
+import { useSlider } from "../../context/sliderContext"
 
 const SliderNavigation = () => {
-  const [currentSlide, setCurrentSlide] = useState(2); // Example of current slide (can be dynamically updated)
+  const { currentSlide, setCurrentSlide } = useSlider(1);  // Example of current slide (can be dynamically updated)
 
   return (
     <div className="flex justify-between items-center gap-4 mt-4">

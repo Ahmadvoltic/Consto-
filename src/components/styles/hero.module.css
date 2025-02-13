@@ -8,7 +8,6 @@
  .image{
     width: 100%;
     height: 800px;
-    background-image: url('../../../public/slide01.jpg');
     background-position: cover;
     background-size: cover;
     background-repeat: no-repeat;
