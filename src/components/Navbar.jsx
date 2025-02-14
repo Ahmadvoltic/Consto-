@@ -55,7 +55,7 @@ import { FiMenu, FiSearch } from 'react-icons/fi';
 
 const Navbar = () => {
     return (
-        <header className='bg-[#0b0b0b] h-[58px] py-2 w-full'>
+        <header className='bg-[#0b0b0b] h-[58px] py-2 w-full overflow-hidden'>
 
             <Container className={`flex justify-between items-center ${styles.navbar} text-white px-4 lg:px-8`}>
                 {/* Logo */}
@@ -82,12 +82,12 @@ const Navbar = () => {
                     </div>
 
                     {/* Menu Icon - Visible Only on Small Screens */}
-                    <div className='block lg:hidden cursor-pointer'>
+                    <div className='block mr-8 lg:hidden cursor-pointer'>
                         <FiMenu size={30} />
                     </div>
 
                     {/* Sales Specialist Button - Adjusts for Small Screens */}
-                    <button className='bg-[#FEED01] text-[#0b0b0b] px-[20px] md:px-[30px] lg:px-[40px] py-[10px] text-sm md:text-base'>
+                    <button className='bg-[#FEED01] text-[#0b0b0b] hidden px-[20px] md:px-[30px] lg:px-[40px] py-[10px] text-sm md:text-base  md:block'>
                         Sales Specialist
                     </button>
                 </div>

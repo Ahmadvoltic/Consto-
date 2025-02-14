@@ -65,7 +65,7 @@ const CountingSection = () => {
   return (
     <div
       ref={countingRef}
-      className="grid grid-cols-1 md:grid-cols-4 gap-6 p-10"
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-10"
     >
       {/* First Card */}
       <CountingCard
@@ -101,7 +101,7 @@ const CountingSection = () => {
         label="Monthly Payment"
         suffix="+"
         color="yellow-500"
-        className="lg:mt-[143px]"
+        className="lg:mt-[143px] "
         isVisible={isVisible}
       />
     </div>

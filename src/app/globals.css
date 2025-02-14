@@ -36,3 +36,8 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+
+.border1{
+  border: 1px solid red;
+}

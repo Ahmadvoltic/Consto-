@@ -166,7 +166,7 @@
 
 // _______________________ Responsive ___________________
 "use client";
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaArrowRight, FaArrowUp } from 'react-icons/fa';
 import styles from '@/components/styles/header.module.css';
 import Container from '@/components/Container';
@@ -176,12 +176,18 @@ const FooterSection = () => {
 
     // Scroll to top with smooth effect
     const scrollToTop = () => {
-        scroll.scrollToTop({
-            duration: 2000, // Duration in ms
-            smooth: "easeInOutQuart", // Smooth scrolling easing
-        });
-        console.log("scroll")
-    };
+        if (typeof window !== "undefined") {
+          scroll.scrollToTop({
+            duration: 1000,
+            smooth: "easeInOutQuart",
+          });
+        }
+      };
+      
+      useEffect(() => {
+        // Ensure scroll is called after mount
+        scrollToTop();
+      }, []);
 
     return (
         <div>

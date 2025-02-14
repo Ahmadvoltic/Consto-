@@ -534,9 +534,9 @@ const HeroImageSection = () => {
         alt="Hero Image"
         className="w-full h-auto lg:h-full object-cover rounded-lg transition-transform duration-700 ease-in-out"
       />
-      <div className="bg-[#FEED01] text-black w-[100px] h-[100px] lg:w-[130px] lg:h-[130px] absolute bottom-[10px] left-[10px] lg:bottom-[20px] lg:left-[20px] flex flex-col justify-center items-center">
+      <div className="bg-[#FEED01] text-black w-[100px] h-[100px] lg:w-[130px] lg:h-[130px] absolute  lg:bottom-[20px] lg:left-[20px] flex flex-col justify-center items-center bottom-20 left-1/2 -translate-x-1/2 lg:-translate-x-0 md:bottom-[-34px] md:left-0 md:-translate-x-0">
         <h1 className="text-4xl lg:text-6xl my-2 lg:my-3">27</h1>
-        <p className="text-xs lg:text-sm ms-3 lg:ms-7 mb-2 lg:mb-3">
+        <p className="text-xs  lg:text-sm ms-3 lg:ms-7 mb-2 lg:mb-3">
           YEARS OF EXPERIENCE
         </p>
       </div>
@@ -579,7 +579,7 @@ const HeroTextSection = () => {
       <p className="mt-4 text-lg md:text-xl lg:text-2xl text-white">
         {content.description}
       </p>
-      <div className="mt-7 flex justify-center items-center ">
+      <div className="mt-7 flex justify-center lg:justify-start items-center ">
         <button className="bg-[#FEED01] px-6 md:px-7 py-3 md:py-4 flex items-center justify-center duration-300 ease-in-out hover:px-9 text-sm md:text-base">
           {content.buttonText}
           <FiArrowRight className="ml-4" size={20} />
@@ -603,7 +603,7 @@ const HeroSection = () => {
         </section>
 
         {/* Slider Navigation */}
-        <div className="bg-white h-[80px] lg:h-[100px] w-[90%] md:w-[60%] lg:w-[40%] mt-4 relative bottom-[60px] lg:bottom-[100px] mx-auto lg:ms-0">
+        <div className="bg-white md:float-right lg:float-left h-[80px] lg:h-[100px] w-[90%] md:w-[60%] lg:w-[40%] mt-4 relative bottom-[60px] lg:bottom-[100px] mx-auto lg:ms-0">
           <SliderNavigation />
         </div>
 

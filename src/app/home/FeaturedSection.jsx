@@ -56,8 +56,8 @@ import styles from '@/components/styles/hero.module.css';
 
 const FeaturedSection = () => {
   return (
-    <div className="py-12 bg-white text-dark px-4">
-      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 md:mb-12">
+    <div className="py-12 bg-white text-dark px-4 ">
+      <h2 className="text-3xl md:text-4xl font-semibold whitespace-nowrap text-center mb-8 md:mb-12 w-fit mx-auto">
         Featured Services
       </h2>
 
