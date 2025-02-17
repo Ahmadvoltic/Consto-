@@ -257,7 +257,7 @@ const FooterSection = () => {
                         <div className='text-center lg:text-left'>
                             <h6 className='mb-4 text-lg font-semibold'>SUBSCRIPTION</h6>
                             <p className='mb-4'>Stay updated with our latest news.</p>
-                            <input type="text" placeholder='Enter Your Email' className='w-full md:w-[370px] p-4 bg-[#232222] outline-none text-center lg:text-left' />
+                            <input type="text" placeholder='Enter Your Email' className='w-full md:w-[340px] p-4 bg-[#232222] outline-none text-center lg:text-left' />
                             <button className='w-full md:w-[160px] h-[50px] md:h-[60px] bg-[#feed01] text-black mt-4'>
                                 Sign up
                             </button>

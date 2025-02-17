@@ -152,7 +152,7 @@ const NewsSection = () => {
 
               {/* Card Content */}
               <div className="p-6">
-                <p className="text-lg md:text-xl font-semibold text-black group-hover:underline">
+                <p className="text-lg md:text-xl font-semibold text-black group-hover:underline  ">
                   {article.title}
                 </p>
                 <p className="text-sm text-gray-500">{article.date}</p>

@@ -62,7 +62,7 @@ const FeaturedSection = () => {
       </h2>
 
       {/* Responsive Grid Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8  justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-6  ">
         {/* First Card */}
         <div className={`p-6 md:p-[30px] lg:w-[390px] lg:h-[453px] bg-white hover:bg-[#FEED01] transition-all duration-300 ${styles.card}`}>
           <div className="flex justify-start mb-6 md:mb-[50px] text-5xl text-gray-300">

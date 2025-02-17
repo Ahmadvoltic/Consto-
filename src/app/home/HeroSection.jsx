@@ -476,6 +476,7 @@ import TeamSection from "./TeamSection";
 import NewsSection from "./NewsSection";
 import FooterSection from "./FooterSection";
 import { SliderProvider, useSlider } from "../../context/sliderContext";
+import CompletedProject from "./CompletedProject";
 
 // Sample images
 const images = {
@@ -525,9 +526,8 @@ const HeroImageSection = () => {
 
   return (
     <div
-      className={`${styles.image} relative lg:left-[200px] w-full lg:w-[50%] transition-all duration-700 ${
-        fade ? "opacity-0 translate-y-10" : "opacity-100 translate-y-0"
-      }`}
+      className={`${styles.image} relative lg:left-[200px] w-full lg:w-[50%] transition-all duration-700 ${fade ? "opacity-0 translate-y-10" : "opacity-100 translate-y-0"
+        }`}
     >
       <img
         src={images[currentSlide]}
@@ -558,9 +558,8 @@ const HeroTextSection = () => {
 
   return (
     <div
-      className={`py-16 lg:py-[200px] text-center lg:text-left w-full lg:w-[50%] transition-all duration-700 ${
-        fade ? "opacity-0 translate-x-10" : "opacity-100 translate-x-0"
-      }`}
+      className={`py-16 lg:py-[200px] text-center lg:text-left w-full lg:w-[50%] transition-all duration-1000 ${fade ? "opacity-0 translate-x-10" : "opacity-100 translate-x-0"
+        }`}
     >
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
         {content.title.split(" ")[0]}{" "}
@@ -621,8 +620,13 @@ const HeroSection = () => {
         </div>
         <ProfileSection />
         <CountingSection />
+
+
+
+
         <PricingSection />
       </Container>
+      <CompletedProject />
 
       <Container>
         <TeamSection />
