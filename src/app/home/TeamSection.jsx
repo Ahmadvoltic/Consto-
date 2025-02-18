@@ -142,7 +142,7 @@ const TeamSection = () => {
                         className="group relative bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:bg-[#feed01] hover:shadow-xl transform-gpu mx-auto w-full max-w-[300px]"
                     >
                         {/* Image */}
-                        <div className="w-full h-56 bg-gray-200 relative">
+                        <div className="w-full min-h-56 bg-gray-200 relative">
                             <img
                                 src={member.image}
                                 alt={member.name}

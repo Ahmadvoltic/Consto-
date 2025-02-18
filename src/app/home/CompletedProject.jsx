@@ -39,7 +39,7 @@ const CompletedProject = () => {
     // };
 
     return (
-        <div className="py-16 px-4 max-h-[800px] bg-[#f7f6f1]">
+        <div className="py-16 px-4 max-h-[800px] bg-[#f7f6f1] mb-[300px] md:mb-0">
             <Container className='mb-12'>
                 <section className="flex flex-col lg:flex-row justify-between items-center text-[#0b0b0b]">
 
@@ -54,7 +54,7 @@ const CompletedProject = () => {
             </Container>
             <div className="relative">
                 {/* Image Slider */}
-                <div className="sm:block md:flex justify-center gap-4">
+                <div className="sm:block  md:flex justify-center gap-4">
                     {images.map((image, index) => (
                         <div
                             key={index}
@@ -64,7 +64,7 @@ const CompletedProject = () => {
                             <img
                                 src={image.src}
                                 alt={`Project ${index}`}
-                                className="w-full  h-full  object-cover  transition-opacity duration-500"
+                                className="w-full  h-full  object-cover  transition-opacity duration-500 mb-2 md:mb-0"
                             />
                             {index === currentImage && (
                                 <div className="absolute hidden md:block  bottom-[-50px] left-1/2   lg:-bottom-6 lg:left-1/2 transform -translate-x-1/2 bg-[#feed01] text-black text-[10px] lg:text-lg px-1 lg:px-6 py-2 rounded-md  ">

@@ -157,7 +157,7 @@ const Navbar = () => {
 
                     {/* Menu Icon - Visible Only on Small Screens */}
                     <div className="block mr-8 lg:hidden cursor-pointer" onClick={toggleMenu}>
-                        <span className="text-white text-3xl">{isOpen ? '✖' : '☰'}</span>
+                        <span className="text-white text-3xl">{isOpen ? '' : '☰'}</span>
                     </div>
 
                     {/* Sales Specialist Button */}
@@ -171,10 +171,10 @@ const Navbar = () => {
             {isOpen && (
                 <div className="absolute top-0 left-0 w-full h-full  bg-[#232222] bg-opacity-70 z-50">
                     <div className="bg-[#232222] p-6 w-3/4 h-full text-white">
-                        <div className="flex justify-between items-center">
+                        <div className="flex justify-around items-center">
                             <img src='/logo.png' className='h-[40px] mt-2' alt="logo" />
-                            <div onClick={toggleMenu} className="cursor-pointer text-white text-2xl">
-                                <span>✖</span>
+                            <div onClick={toggleMenu} className="cursor-pointer text-white text-2xl mx-5 mt-3">
+                               <span> ✖</span>
                             </div>
                         </div>
                         <ul className="mt-8 space-y-4 text-lg font-semibold">
