@@ -54,7 +54,7 @@ const CompletedProject = () => {
             </Container>
             <div className="relative">
                 {/* Image Slider */}
-                <div className="flex justify-center gap-4">
+                <div className="sm:block md:flex justify-center gap-4">
                     {images.map((image, index) => (
                         <div
                             key={index}
@@ -64,12 +64,12 @@ const CompletedProject = () => {
                             <img
                                 src={image.src}
                                 alt={`Project ${index}`}
-                                className="w-full h-full  object-cover  transition-opacity duration-500"
+                                className="w-full  h-full  object-cover  transition-opacity duration-500"
                             />
                             {index === currentImage && (
-                                <div className="absolute bottom-[-50px] left-1/2  md:bottom-2 md:left-1/2 lg:-bottom-6 lg:left-1/2 transform -translate-x-1/2 bg-[#feed01] text-black text-[10px] lg:text-lg px-1 lg:px-6 py-2 rounded-md  ">
+                                <div className="absolute hidden md:block  bottom-[-50px] left-1/2   lg:-bottom-6 lg:left-1/2 transform -translate-x-1/2 bg-[#feed01] text-black text-[10px] lg:text-lg px-1 lg:px-6 py-2 rounded-md  ">
                                    <h2 className='lg:text-2xl font-bold'>{image.title}</h2>
-                                   <p>{image.description}</p>
+                                   <p className='md:whitespace-nowrap'>{image.description}</p>
                                 </div>
                             )}
                         </div>
