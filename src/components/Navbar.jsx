@@ -101,7 +101,7 @@
 
 
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Container from './Container';
 import styles from '@/components/styles/header.module.css';
 import { FiMenu, FiSearch } from 'react-icons/fi';
@@ -112,6 +112,22 @@ const Navbar = () => {
 
     // Toggle the sidebar visibility
     const toggleMenu = () => setIsOpen(!isOpen);
+
+  // Lock/Unlock the scroll when the menu opens/closes
+  useEffect(() => {
+    if (isOpen) {
+      // Disable scrolling
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Re-enable scrolling
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cleanup the effect when the component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
 
     return (
         <header className="bg-[#0b0b0b] h-[58px] py-2 w-full overflow-hidden">
@@ -153,7 +169,7 @@ const Navbar = () => {
 
             {/* Sidebar Menu for Mobile */}
             {isOpen && (
-                <div className="absolute top-0 left-0 w-full h-full bg-[#232222] bg-opacity-70 z-50">
+                <div className="absolute top-0 left-0 w-full h-full  bg-[#232222] bg-opacity-70 z-50">
                     <div className="bg-[#232222] p-6 w-3/4 h-full text-white">
                         <div className="flex justify-between items-center">
                             <img src='/logo.png' className='h-[40px] mt-2' alt="logo" />
