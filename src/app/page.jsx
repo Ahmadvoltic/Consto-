@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "./home/HeroSection";
 import styles from '@/components/styles/header.module.css'
 import { SliderProvider } from "../context/sliderContext";
+import Resizable from "@/components/swiperslider/swiperslider";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
 <SliderProvider> 
    <div className={styles.navbar}>
    <Navbar/>
+    {/* <Resizable/> */}
    <HeroSection/>
   
    </div>

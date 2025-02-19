@@ -163,7 +163,7 @@ const CompletedProject = () => {
           ))}
         </Swiper>
 
-        <div className="absolute hidden   bottom-[-100px] left-1/2 transform -translate-x-1/2 flex space-x-4">
+        <div className="absolute hidden  bottom-[-100px] left-1/2 transform -translate-x-1/2  space-x-4">
           {images.map((_, index) => (
             <div
               key={index}
@@ -195,7 +195,7 @@ const CompletedProject = () => {
           </div>
         ))}
           {/* Image Dots Navigation */}
-          <div className="absolute  bottom-[-100px] left-1/2 transform -translate-x-1/2 flex space-x-4">
+          <div className="absolute hidden  lg:flex bottom-[-100px] left-1/2 transform -translate-x-1/2  space-x-4">
           {images.map((_, index) => (
             <div
               key={index}
