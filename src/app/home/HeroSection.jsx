@@ -141,7 +141,7 @@ const HeroSection = () => {
         </section>
 
         {/* Slider Navigation */}
-        <div className="bg-white md:float-right lg:float-left h-[80px] lg:h-[100px] w-[90%] md:w-[60%] lg:w-[40%] mt-4 relative bottom-[60px] lg:bottom-[100px] mx-auto lg:ms-0">
+        <div className="bg-white md:float-right lg:float-left h-[80px] lg:h-[100px] w-[90%] md:w-[60%] lg:w-[40%] mt-4 relative bottom-[60px]  mx-auto lg:ms-0">
           <SliderNavigation />
         </div>
 

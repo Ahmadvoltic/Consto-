@@ -105,6 +105,13 @@ import React, { useEffect, useState } from 'react';
 import Container from './Container';
 import styles from '@/components/styles/header.module.css';
 import { FiMenu, FiSearch } from 'react-icons/fi';
+import dynamic from 'next/dynamic';
+
+const CalendlyModal = dynamic(
+    () => import('../app/home/CalendlyModal'),
+    { ssr: false } // Disable SSR to load only on the client-side
+);
+
 
 const Navbar = () => {
     // State to control the menu toggle (hamburger icon and cross icon)
@@ -113,24 +120,55 @@ const Navbar = () => {
     // Toggle the sidebar visibility
     const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Lock/Unlock the scroll when the menu opens/closes
-  useEffect(() => {
-    if (isOpen) {
-      // Disable scrolling
-      document.body.style.overflow = 'hidden';
-    } else {
-      // Re-enable scrolling
-      document.body.style.overflow = 'auto';
-    }
+    // Lock/Unlock the scroll when the menu opens/closes
+    useEffect(() => {
+        if (isOpen) {
+            // Disable scrolling
+            document.body.style.overflow = 'hidden';
+        } else {
+            // Re-enable scrolling
+            document.body.style.overflow = 'auto';
+        }
 
-    // Cleanup the effect when the component unmounts
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [isOpen]);
+        // Cleanup the effect when the component unmounts
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isOpen]);
+
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const openModal = () => setIsModalVisible(true);
+    const closeModal = () => setIsModalVisible(false);
+
+//Navbar hide on down scrolling and see on upward scrolling
+const [prevScrollpos, setPrevScrollpos] = useState(0);
+const [hidden, setHidden] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      setHidden(false); // Show header when scrolling up
+    } else {
+      setHidden(true); // Hide header when scrolling down
+    }
+    setPrevScrollpos(currentScrollPos);
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, [prevScrollpos]);
+
 
     return (
-        <header className="bg-[#0b0b0b] h-[58px] py-2 w-full overflow-hidden">
+        <header  className={` bg-[#0b0b0b] h-[64px] py-2   fixed top-0 left-0 w-full transition-all duration-300 z-50 ${
+            hidden ? '-translate-y-full' : 'translate-y-0'
+          } bg-[#0b0b0b] shadow-md`}
+          >
             <Container className={`flex justify-between items-center ${styles.navbar} text-white px-4 lg:px-8`}>
                 {/* Logo */}
                 <img src='/logo.png' className='h-[40px] mt-2' alt="logo" />
@@ -149,7 +187,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Icons & Mobile Menu */}
-                <div className="flex items-center gap-5">
+                <div className="flex items-center gap-5 ">
                     {/* Search Icon (Hidden on Small Screens) */}
                     <div className="hidden md:block cursor-pointer">
                         {/* <FiSearch size={25} /> */}
@@ -161,9 +199,17 @@ const Navbar = () => {
                     </div>
 
                     {/* Sales Specialist Button */}
-                    <button className="bg-[#FEED01] text-[#0b0b0b] hidden px-[20px] md:px-[30px] lg:px-[40px] py-[10px] text-sm md:text-base md:block">
+                    
+                    <button
+                        className="bg-[#FEED01] text-[#0b0b0b] hidden px-[20px] md:px-[30px] lg:px-[40px] py-[10px] text-sm md:text-base md:block"
+                        onClick={openModal}
+                    >
                         Sales Specialist
                     </button>
+
+                    {isModalVisible && (
+                        <CalendlyModal closeModal={closeModal} />
+                    )}
                 </div>
             </Container>
 
@@ -174,7 +220,7 @@ const Navbar = () => {
                         <div className="flex justify-around items-center">
                             <img src='/logo.png' className='h-[40px] mt-2' alt="logo" />
                             <div onClick={toggleMenu} className="cursor-pointer text-white text-2xl mx-5 mt-3">
-                               <span> ✖</span>
+                                <span> ✖</span>
                             </div>
                         </div>
                         <ul className="mt-8 space-y-4 text-lg font-semibold">

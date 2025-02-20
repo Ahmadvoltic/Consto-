@@ -121,7 +121,7 @@ const CompletedProject = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   return (
-    <div className="py-16 px-4 max-h-[800px] bg-[#f7f6f1] mb-[300px] md:mb-0">
+    <div className="py-16 px-4  bg-[#f7f6f1] mb-[300px] md:mb-0">
       <Container>
 
       <section className="flex flex-col lg:flex-row justify-between items-center text-[#0b0b0b]">
@@ -138,7 +138,7 @@ const CompletedProject = () => {
       </Container>
 
       {/* Image Slider for Small and Medium Screens */}
-      <div className="relative sm:block md:block lg:hidden">
+      <div className="  relative sm:block md:block lg:hidden">
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
