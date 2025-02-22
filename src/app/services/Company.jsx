@@ -108,11 +108,11 @@ const Company = () => {
                 <div className='flex flex-col lg:flex-row gap-14'>
                     <div className='w-full  lg:w-1/3 card1 relative group'>
                         <figure className="grayscale group-hover:grayscale-0">
-                            <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/step01.jpg" alt="" />
+                            <img src="/step01.jpg" alt="" />
                         </figure>
                         <div className='w-10/12 p-10 absolute bottom-[25px] right-[25px] lg:bottom-[-25px]  lg:right-[-25px] bg-white transition-bottom group duration-300 group-hover:bottom-0 z-10'>
                             <figure className='flex justify-between'>
-                                <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/icon01.png" className='w-[50px] h-[70px]' alt="" />
+                                <img src="/icon01.png" className='w-[50px] h-[70px]' alt="" />
                                 <span className="font-extrabold opacity-30 text-[19px]">01.</span>
                             </figure>
                             <h6 className='border-b-4 leading-[1] border-[#feed01] inline-block my-5 tracking-wider font-extrabold transition-border duration-300 group-hover:border-0'>
@@ -124,11 +124,11 @@ const Company = () => {
 
                     <div className='w-full  lg:w-1/3 card1 relative group'>
                         <figure className="grayscale group-hover:grayscale-0">
-                            <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/step02.jpg" alt="" />
+                            <img src="/step02.jpg" alt="" />
                         </figure>
                         <div className='w-10/12 p-10 absolute bottom-[25px] right-[25px] lg:bottom-[-25px]  lg:right-[-25px] bg-white group transition-bottom duration-300 group-hover:bottom-0 z-10'>
                             <figure className='flex justify-between'>
-                                <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/icon01.png" className='w-[50px] h-[70px]' alt="" />
+                                <img src="/icon01.png" className='w-[50px] h-[70px]' alt="" />
                                 <span className="font-extrabold opacity-30 text-[19px]">02.</span>
                             </figure>
                             <h6 className='border-b-4 leading-[1] border-[#feed01] inline-block my-5 tracking-wider font-extrabold transition-border duration-300 group-hover:border-0'>
@@ -140,11 +140,11 @@ const Company = () => {
 
                     <div className='w-full  lg:w-1/3 card1 relative group'>
                         <figure className="grayscale group-hover:grayscale-0">
-                            <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/step03.jpg" alt="" />
+                            <img src="/step03.jpg" alt="" />
                         </figure>
                         <div className='w-10/12 p-10 absolute bottom-[25px] right-[25px] lg:bottom-[-25px]  lg:right-[-25px] bg-white group transition-bottom duration-300 group-hover:bottom-0 z-10'>
                             <figure className='flex justify-between'>
-                                <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/icon01.png" className='w-[50px] h-[70px]' alt="" />
+                                <img src="/icon01.png" className='w-[50px] h-[70px]' alt="" />
                                 <span className="font-extrabold opacity-30 text-[19px]">03.</span>
                             </figure>
                             <h6 className='border-b-4 leading-[1] border-[#feed01] inline-block my-5 tracking-wider font-extrabold transition-border duration-300 group-hover:border-0'>

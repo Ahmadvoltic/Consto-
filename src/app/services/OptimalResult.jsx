@@ -96,11 +96,11 @@ const OptimalResult = () => {
 
     // List of images to display
     const images = [
-        "http://consto.themezinho.net/wp-content/uploads/2020/06/tab01.jpg",
-        "http://consto.themezinho.net/wp-content/uploads/2020/06/tab02.jpg",
-        "http://consto.themezinho.net/wp-content/uploads/2020/06/tab03.jpg",
-        "http://consto.themezinho.net/wp-content/uploads/2020/06/tab04.jpg",
-        "http://consto.themezinho.net/wp-content/uploads/2020/06/tab05.jpg"
+        "/tab01.jpg",
+        "/tab02.jpg",
+        "/tab03.jpg",
+        "/tab04.jpg",
+        "/tab05.jpg"
     ];
 
     return (
