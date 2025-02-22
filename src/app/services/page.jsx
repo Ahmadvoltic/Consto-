@@ -82,10 +82,12 @@ import PricingSection from '../home/PricingSection'
 import FooterSection from '../home/FooterSection'
 import Company from './Company'
 import OptimalResult from './OptimalResult'
+import Loading from '../loading'
 
 const Services = () => {
     return (
         <div>
+            
             <Navbar />
             <div className={`${styles.navbar} min-h-[500px] flex items-center `}>
                 <Container>

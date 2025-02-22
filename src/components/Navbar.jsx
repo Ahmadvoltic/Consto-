@@ -107,6 +107,7 @@ import styles from '@/components/styles/header.module.css';
 import { FiMenu, FiSearch } from 'react-icons/fi';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import Loading from '@/app/loading';
 
 const CalendlyModal = dynamic(
     () => import('../app/home/CalendlyModal'),
@@ -165,7 +166,12 @@ useEffect(() => {
 }, [prevScrollpos]);
 
 
+
+
+
     return (
+        <>
+       <Loading/>
         <header  className={` bg-[#0b0b0b] h-[64px] py-2 ${styles.navbar}  fixed top-0 left-0 w-full transition-all duration-300 z-50 ${
             hidden ? '-translate-y-full' : 'translate-y-0'
           } bg-[#0b0b0b] shadow-md`}
@@ -235,6 +241,7 @@ useEffect(() => {
                 </div>
             )}
         </header>
+    </>
     );
 };
 

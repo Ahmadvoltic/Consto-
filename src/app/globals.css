@@ -77,7 +77,7 @@ body {
   content: "";
   width: 40%;
   height: 65px;
-  background: url('http://consto.themezinho.net/wp-content/themes/consto/images/pattern-dot.png');
+  background: url('/pattern-dot.png');
   background-size: 12px 12px;
   position: absolute;
   right: -55px;
