@@ -72,3 +72,15 @@ body {
   background-color: blue;
   color: white;
 }
+
+.card1:hover::after {
+  content: "";
+  width: 40%;
+  height: 65px;
+  background: url('http://consto.themezinho.net/wp-content/themes/consto/images/pattern-dot.png');
+  background-size: 12px 12px;
+  position: absolute;
+  right: -55px;
+  bottom: -25px;
+  z-index: 0;
+}

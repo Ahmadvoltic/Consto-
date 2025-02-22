@@ -3,6 +3,10 @@
     background-color: #0b0b0b;
     max-height: 850px;
 }
+.services{
+  background: url(http://consto.themezinho.net/wp-content/uploads/2020/06/section-bg02.jpg) center no-repeat;
+  min-height: 760px;
+}
 .footer{
   background-image: url('http://consto.themezinho.net/wp-content/themes/consto/images/header-pattern.png');
   background-color: #232222;

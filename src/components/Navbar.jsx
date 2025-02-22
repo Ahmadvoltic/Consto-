@@ -106,6 +106,7 @@ import Container from './Container';
 import styles from '@/components/styles/header.module.css';
 import { FiMenu, FiSearch } from 'react-icons/fi';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 
 const CalendlyModal = dynamic(
     () => import('../app/home/CalendlyModal'),
@@ -165,7 +166,7 @@ useEffect(() => {
 
 
     return (
-        <header  className={` bg-[#0b0b0b] h-[64px] py-2   fixed top-0 left-0 w-full transition-all duration-300 z-50 ${
+        <header  className={` bg-[#0b0b0b] h-[64px] py-2 ${styles.navbar}  fixed top-0 left-0 w-full transition-all duration-300 z-50 ${
             hidden ? '-translate-y-full' : 'translate-y-0'
           } bg-[#0b0b0b] shadow-md`}
           >
@@ -177,8 +178,8 @@ useEffect(() => {
                 <div className='hidden lg:flex'>
                     <nav>
                         <ul className='flex gap-7 text-white'>
-                            <li><a href="">Consto</a></li>
-                            <li><a href="">Services</a></li>
+                            <li><Link href="/">Consto</Link></li>
+                            <li><Link href="/services">Services</Link></li>
                             <li><a href="">Projects</a></li>
                             <li><a href="">News</a></li>
                             <li><a href="">Contact</a></li>
@@ -201,7 +202,7 @@ useEffect(() => {
                     {/* Sales Specialist Button */}
                     
                     <button
-                        className="bg-[#FEED01] text-[#0b0b0b] hidden px-[20px] md:px-[30px] lg:px-[40px] py-[10px] text-sm md:text-base md:block"
+                        className="bg-[#FEED01] text-[#0b0b0b] hidden px-[20px] md:px-[30px] lg:px-[40px] py-[10px] text-sm md:text-base lg:block"
                         onClick={openModal}
                     >
                         Sales Specialist
@@ -216,7 +217,7 @@ useEffect(() => {
             {/* Sidebar Menu for Mobile */}
             {isOpen && (
                 <div className="absolute top-0 left-0 w-full h-full  bg-[#232222] bg-opacity-70 z-50">
-                    <div className="bg-[#232222] p-6 w-3/4 h-full text-white">
+                    <div className="bg-[#232222] p-6 w-3/4 min-h-[100vh] text-white">
                         <div className="flex justify-around items-center">
                             <img src='/logo.png' className='h-[40px] mt-2' alt="logo" />
                             <div onClick={toggleMenu} className="cursor-pointer text-white text-2xl mx-5 mt-3">
@@ -224,8 +225,8 @@ useEffect(() => {
                             </div>
                         </div>
                         <ul className="mt-8 space-y-4 text-lg font-semibold">
-                            <li><a href="">Consto</a></li>
-                            <li><a href="">Services</a></li>
+                            <li><Link href="/">Consto</Link></li>
+                            <li><Link href="/services">Services</Link></li>
                             <li><a href="">Projects</a></li>
                             <li><a href="">News</a></li>
                             <li><a href="">Contact</a></li>
