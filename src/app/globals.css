@@ -84,3 +84,17 @@ body {
   bottom: -25px;
   z-index: 0;
 }
+.card2:hover::after {
+  content: "";
+  width: 21%;
+  height: 55px;
+  background: url('/pattern-dot.png');
+  background-size: 12px 12px;
+  position: absolute;
+  right: -25px;
+  bottom: -50px;
+  z-index: 1;
+}
+@media (min-width : 640px) and (max-width : 768px) {
+  
+}

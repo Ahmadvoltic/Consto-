@@ -186,7 +186,7 @@ useEffect(() => {
                         <ul className='flex gap-7 text-white'>
                             <li><Link href="/">Consto</Link></li>
                             <li><Link href="/services">Services</Link></li>
-                            <li><a href="">Projects</a></li>
+                            <li><a href="/projects">Projects</a></li>
                             <li><a href="">News</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
@@ -233,7 +233,7 @@ useEffect(() => {
                         <ul className="mt-8 space-y-4 text-lg font-semibold">
                             <li><Link href="/">Consto</Link></li>
                             <li><Link href="/services">Services</Link></li>
-                            <li><a href="">Projects</a></li>
+                            <li><a href="/projects">Projects</a></li>
                             <li><a href="">News</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
