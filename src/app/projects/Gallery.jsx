@@ -80,8 +80,8 @@ const Gallery = () => {
             <figure className='grayscale group-hover:grayscale-0'>
               <img src={item.imgSrc} alt={item.title} />
             </figure>
-            <div className='bg-black text-white w-[341px] md:w-[408px] h-[70px] md:h-[96px] absolute bottom-[-30px]  left-[25px]   group-hover:bg-[#feed01] z-10 group-hover:text-black transition-all duration-300 ease-in-out transform group-hover:scale-105'>
-              <h5 className='p-[20px]  md:p-[30px] lg:p-[60px] text-2xl font-extrabold'>{item.title}</h5>
+            <div className='bg-black yellow-strip text-white w-[341px] md:w-[408px] h-[70px] md:h-[96px] absolute bottom-[-30px] left-[25px]   group-hover:bg-[#feed01] z-10 group-hover:text-black transition-all duration-300 ease-in-out transform group-hover:scale-105'>
+              <h5 className='p-[20px]   md:p-[30px]  text-2xl font-extrabold'>{item.title}</h5>
             </div>
           </div>
         ))}
@@ -92,3 +92,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+

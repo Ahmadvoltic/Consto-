@@ -95,6 +95,36 @@ body {
   bottom: -50px;
   z-index: 1;
 }
-@media (min-width : 640px) and (max-width : 768px) {
+@media (min-width : 768px) and (max-width : 1023px) {
+  .card2:hover::after {
+    content: "";
+    width: 21%;
+    height: 55px;
+    background: url('/pattern-dot.png');
+    background-size: 12px 12px;
+    position: absolute;
+    right: 200px;
+    bottom: -50px;
+    z-index: 1;
+  }
+}
+@media (min-width : 320px) and (max-width : 375px) {
+.yellow-strip {
   
+  width: 250px;
+}
+.yellow-strip h5{
+  font-size: 15px;
+}
+.card2:hover::after {
+  content: "";
+  width: 21%;
+  height: 55px;
+  background: url('/pattern-dot.png');
+  background-size: 12px 12px;
+  position: absolute;
+  right: 40px;
+  bottom: -50px;
+  z-index: 1;
+}
 }
