@@ -32,10 +32,10 @@ const BelowSection = () => {
     return (
         <section className='py-[80px]'>
             <Container className=''>
-                <div className='flex gap-[60px]'>
+                <div className='lg:flex gap-[60px]'>
 
                     {/* left Section */}
-                    <div className='w-[70%] flex flex-col '>
+                    <div className='lg:w-[70%] flex flex-col '>
                         {data.map((item, index) => (
                             <div key={index} className="mb-10">
                                 <figure className='mb-5'>
@@ -45,7 +45,7 @@ const BelowSection = () => {
                                     <small className="inline-block py-1 px-2 bg-[#feed01] mb-2 text-[#0b0b0b] text-[80%] font-normal">
                                         {item.date}
                                     </small><br />
-                                    <h3 className="text-[3vw] font-normal mb-8 leading-[1.2] text-[#0b0b0b] break-words relative animation">
+                                    <h3 className="text-3xl lg:text-[3vw] font-normal mb-8 leading-[1.2] text-[#0b0b0b] break-words relative animation">
                                         {item.title}
                                     </h3>
 
@@ -60,14 +60,14 @@ const BelowSection = () => {
                     </div>
 
                     {/* right Section */}
-                    <aside className='w-[30%] h-[200px]  rounded-sm'>
+                    <aside className='lg:w-[30%]   rounded-sm'>
 
                         {/* input section */}
 
                         <div className="w-full block mb-12 bg-white p-10 pt-0 border border-[#e2e2e2] relative shadow-[6px_6px_0px_#f5f5f5]">
                             <form className='pt-10'>
 
-                                <input type="text" placeholder='Search...' className='mb-3 px-4 border outline-none rounded py-3' />
+                                <input type="text" placeholder='Search...' className='mb-3 px-4 border outline-none rounded py-3 md:w-full ' />
                                 <button class="h-[68px] border-0 bg-[#feed01] text-black font-extrabold text-[13px] px-[50px] tracking-[1px] rounded-sm"
                                 >Search</button>
                             </form>
