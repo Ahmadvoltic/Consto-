@@ -187,8 +187,8 @@ useEffect(() => {
                             <li><Link href="/">Consto</Link></li>
                             <li><Link href="/services">Services</Link></li>
                             <li><a href="/projects">Projects</a></li>
-                            <li><a href="">News</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="news">News</a></li>
+                            <li><a href="/contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -234,8 +234,8 @@ useEffect(() => {
                             <li><Link href="/">Consto</Link></li>
                             <li><Link href="/services">Services</Link></li>
                             <li><a href="/projects">Projects</a></li>
-                            <li><a href="">News</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="/news">News</a></li>
+                            <li><a href="/contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>

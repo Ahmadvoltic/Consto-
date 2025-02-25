@@ -128,3 +128,25 @@ body {
   z-index: 1;
 }
 }
+.widget-title::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #feed01;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+.animation{
+  display: inline;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) calc(99% - 1px), #0b0b0b 1px);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transition: background-size 0.5s;
+}
+.animation:hover{
+
+  background-size: 100%  100%;
+}
