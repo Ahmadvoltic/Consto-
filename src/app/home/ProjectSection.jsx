@@ -1,29 +1,3 @@
-// import Container from '@/components/Container'
-// import React from 'react'
-
-// const ProjectSection = () => {
-//     return (
-//         <div>
-//             {/* Text Section */}
-//             <Container className="flex justify-center items-center">
-//                 <div className='w-[50%]'>
-//                     <h6 className='text-lg underline decoration-[#FEED01]  decoration-4 text-[#0b0b0b]'>OUR SELECTED PROJECTS</h6>
-//                     <h2 className='text-5xl text-[#0b0b0b]'>Projects Completed</h2>
-//                 </div>
-//                 <p className='w-[50%] text-[#0b0b0b]'>
-//                     Our diverse portfolio represents decades of construction experience backed by a passion for quality, outstanding client service industry technologies.
-
-//                 </p>
-//             </Container>
-//             {/* Image Section */}
-//             <div>
-
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default ProjectSection
 
 
 // -------------------------------------

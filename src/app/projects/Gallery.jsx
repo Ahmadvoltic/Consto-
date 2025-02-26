@@ -1,35 +1,3 @@
-// import Container from '@/components/Container'
-// import React from 'react'
-
-// const Gallery = () => {
-//   return (
-//     <section className='py-[80px]'>
-//         <Container className="flex gap-[120px] flex-wrap">
-//             <div className='border1 w-[44.5%] relative group card2'>
-//                 <figure className='grayscale group-hover:grayscale-0'>
-//                     <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/slide01.jpg" alt="" />
-//                 </figure>
-//                 <div className='bg-black text-white border1 w-[408px] h-[96px] absolute bottom-[-30px]  left-[25px] group-hover:bg-[#feed01] z-10 group-hover:text-black transition-all duration-300 ease-in-out transform group-hover:scale-105'>
-//                 <h5 className='p-[30px] text-2xl font-extrabold '>River Life Residence</h5>
-//                 </div>
-//             </div>
-//             <div className='border1 w-[44.5%] relative group card2'>
-//                 <figure className='grayscale group-hover:grayscale-0'>
-//                     <img src="http://consto.themezinho.net/wp-content/uploads/2020/06/slide01.jpg" alt="" />
-//                 </figure>
-//                 <div className='bg-black text-white border1 w-[408px] h-[96px] absolute bottom-[-30px]  left-[25px] group-hover:bg-[#feed01] z-10 group-hover:text-black transition-all duration-300 ease-in-out transform group-hover:scale-105'>
-//                 <h5 className='p-[30px] text-2xl font-extrabold '>River Life Residence</h5>
-//                 </div>
-//             </div>
-          
-          
-//         </Container>
-//     </section>
-//   )
-// }
-
-// export default Gallery
-
 
 
 import Container from '@/components/Container';

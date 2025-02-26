@@ -149,7 +149,7 @@ const HeroSection = () => {
         <FeaturedSection />
         <div className="text-center mb-10">
           <h2 className="text-xl md:text-2xl font-semibold text-black mb-2">
-            <span className="underline decoration-[#FEED01] decoration-4">
+            <span className="underline decoration-[#FEED01] decoration-4 ">
               OUR HISTORY
             </span>
           </h2>
