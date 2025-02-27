@@ -1,5 +1,5 @@
 .navbar{
-    background-image: url('http://consto.themezinho.net/wp-content/themes/consto/images/header-pattern.png');
+    background-image: url('/header-pattern.png');
     background-color: #0b0b0b;
     max-height: 850px;
 }
@@ -8,7 +8,7 @@
   min-height: 760px;
 }
 .footer{
-  background-image: url('http://consto.themezinho.net/wp-content/themes/consto/images/header-pattern.png');
+  background-image: url('/header-pattern.png');
   background-color: #232222;
   background-position: center;
   background-size: cover;

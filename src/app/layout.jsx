@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Envato Market",
+  title: "Constructo Studio",
   description: "Create Envato Market",
 };
 
