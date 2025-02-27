@@ -68,7 +68,7 @@ const BelowSection = () => {
                             <form className='pt-10'>
 
                                 <input type="text" placeholder='Search...' className='mb-3 px-4 border outline-none rounded py-3 md:w-full ' />
-                                <button class="h-[68px] border-0 bg-[#feed01] text-black font-extrabold text-[13px] px-[50px] tracking-[1px] rounded-sm"
+                                <button className="h-[68px] border-0 bg-[#feed01] text-black font-extrabold text-[13px] px-[50px] tracking-[1px] rounded-sm"
                                 >Search</button>
                             </form>
 

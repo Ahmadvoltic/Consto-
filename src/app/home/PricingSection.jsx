@@ -4,12 +4,38 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa"; // Importing arrow icon from React Icons
 
 const PricingSection = () => {
+  const cards = [
+    {
+      heading1 : "Commercial",
+      heading2 : "Apartments",
+    },
+    {
+      heading1 : "Villas",
+      heading2 : "Lands",
+    },
+    {
+      heading1 : "XXL Size of Flats",
+      heading2 : "Flats",
+    },
+    {
+      heading1 : "Industrial",
+      heading2 : "Land Area",
+    },
+    {
+      heading1 : "Bedroom",
+      heading2 : "Large Grounds",
+    },
+    {
+      heading1 : "Playing Area",
+      heading2 : "Dinnig Hall",
+    },
+  ]
   return (
     <div className="bg-white py-12 px-4 md:px-10">
       {/* Header */}
       <div className="text-center md:text-left">
         <h2 className="text-xl md:text-2xl font-semibold mb-2">
-          <span className="underline decoration-[#FEED01]">ESTIMATED PRICE</span>
+          <span className="underline decoration-[#FEED01] decoration-4">ESTIMATED PRICE</span>
         </h2>
         <h3 className="text-2xl md:text-4xl font-semibold text-black mb-8 md:mb-12">
           Sectors We Work In
@@ -19,58 +45,67 @@ const PricingSection = () => {
       {/* Pricing Table */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {/* Card 1 */}
-        <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
+        {cards.map((card, index)=>(
+          <div key={index} className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
+          <p className="text-lg md:text-xl font-semibold text-black">{card.heading1}</p>
+          <div className="flex justify-between items-center mt-4">
+            <p className="text-sm">{card.heading2}</p>
+            <FaArrowRight className="text-gray-600" />
+          </div>
+        </div>
+        ))}
+        {/* <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
           <p className="text-lg md:text-xl font-semibold text-black">Commercial</p>
           <div className="flex justify-between items-center mt-4">
             <p className="text-sm">Apartments</p>
             <FaArrowRight className="text-gray-600" />
           </div>
-        </div>
+        </div> */}
 
         {/* Card 2 */}
-        <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
+        {/* <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
           <p className="text-lg md:text-xl font-semibold text-black">Villas</p>
           <div className="flex justify-between items-center mt-4">
             <p className="text-sm">Lands</p>
             <FaArrowRight className="text-gray-600" />
           </div>
-        </div>
+        </div> */}
 
         {/* Card 3 */}
-        <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
+        {/* <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
           <p className="text-lg md:text-xl font-semibold text-black">XXL Size of Flats</p>
           <div className="flex justify-between items-center mt-4">
             <p className="text-sm">Flats</p>
             <FaArrowRight className="text-gray-600" />
           </div>
-        </div>
+        </div> */}
 
         {/* Card 4 */}
-        <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
+        {/* <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
           <p className="text-lg md:text-xl font-semibold text-black">Industrial</p>
           <div className="flex justify-between items-center mt-4">
             <p className="text-sm">Industrial</p>
             <FaArrowRight className="text-gray-600" />
           </div>
-        </div>
+        </div> */}
 
         {/* Card 5 */}
-        <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
+        {/* <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
           <p className="text-lg md:text-xl font-semibold text-black">Industrial</p>
           <div className="flex justify-between items-center mt-4">
             <p className="text-sm">Industrial</p>
             <FaArrowRight className="text-gray-600" />
           </div>
-        </div>
+        </div> */}
 
         {/* Card 6 */}
-        <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
+        {/* <div className="bg-white shadow-md p-6 rounded-lg hover:shadow-xl hover:bg-[#FEED01] hover:scale-105 transition-all duration-300">
           <p className="text-lg md:text-xl font-semibold text-black">Industrial</p>
           <div className="flex justify-between items-center mt-4">
             <p className="text-sm">Industrial</p>
             <FaArrowRight className="text-gray-600" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

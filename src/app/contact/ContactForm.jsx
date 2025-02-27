@@ -7,47 +7,47 @@ const ContactForm = () => {
             <Container className='lg:flex justify-between'>
                 {/* left section */}
                 <div className='mb-20'>
-                    <h6 class=" relative inline z-10 font-extrabold tracking-[3px] text-[18px] line w-1/2"
+                    <h6 className=" relative inline z-10 font-extrabold tracking-[3px] text-[18px] line w-1/2"
                     >GET IN TOUCH</h6>
-                    <h2 class="w-full block mb-0 text-[36px] lg:text-[47px]"
+                    <h2 className="w-full block mb-0 text-[36px] lg:text-[47px]"
                     >Quality &amp; Passion With<br />
                         Contact Form</h2>
                 </div>
                 {/* right side form */}
-                <div class=" block p-[50px] bg-white relative z-10 mb-[-80%] shadow-[0_0_30px_rgba(0,0,0,0.1)] lg:w-1/2 h-[750px]"
+                <div className=" block p-[50px] bg-white relative z-10 mb-[-80%] shadow-[0_0_30px_rgba(0,0,0,0.1)] lg:w-1/2 h-[750px]"
                 >
                     <div className='mb-4'>
-                        <p class="mt-0 mb-4"
+                        <p className="mt-0 mb-4"
                         ><span>Full Name</span><br />
-                            <input type="text" class="w-full h-[68px] border-2 border-[#e8e8e8] px-[30px]  rounded-md focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-50 "
+                            <input type="text" className="w-full h-[68px] border-2 border-[#e8e8e8] px-[30px]  rounded-md focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-50 "
                             />
                         </p>
                     </div>
                     <div className='mb-4'>
-                        <p class="mt-0 mb-4"
+                        <p className="mt-0 mb-4"
                         ><span>Your Email</span><br />
-                            <input type="email" class="w-full h-[68px] border-2 border-[#e8e8e8] px-[30px] rounded-md focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-50"
+                            <input type="email" className="w-full h-[68px] border-2 border-[#e8e8e8] px-[30px] rounded-md focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-50"
                             />
                         </p>
                     </div>
                     <div className='mb-4'>
-                        <p class="mt-0 mb-4"
+                        <p className="mt-0 mb-4"
                         ><span>Subject</span><br />
-                            <input type="text" class="w-full h-[68px] border-2 border-[#e8e8e8] px-[30px] rounded-md focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-50"
+                            <input type="text" className="w-full h-[68px] border-2 border-[#e8e8e8] px-[30px] rounded-md focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-50"
                             />
                         </p>
                     </div>
                     <div className='mb-4'>
-                        <p class="mt-0 mb-4"
+                        <p className="mt-0 mb-4"
                         ><span>Your Message</span><br />
-                            <textarea type="text" class="w-full h-[187px] border-2 border-[#e8e8e8] px-[30px] py-[30px] rounded-md focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-50"
+                            <textarea type="text" className="w-full h-[187px] border-2 border-[#e8e8e8] px-[30px] py-[30px] rounded-md focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-50"
                             ></textarea>
                         </p>
                     </div>
                     <div className='mb-4'>
                         <p className="mt-0 mb-4"
                         >
-                            <input type="submit" value='Send Now' class="h-[68px] border-0 bg-[#feed01] text-black font-extrabold text-[13px] px-[50px] tracking-[1px]"
+                            <input type="submit" value='Send Now' className="h-[68px] border-0 bg-[#feed01] text-black font-extrabold text-[13px] px-[50px] tracking-[1px]"
 
                             />
                         </p>
